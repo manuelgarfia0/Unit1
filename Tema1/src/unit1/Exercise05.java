@@ -20,7 +20,7 @@ public class Exercise05 {
 		// Show length of the circunference
 		System.out.println("The length of the circunference is " + length);
 		// Calculate area of the circunference
-		area = PI * Math.sqrt(radio);
+		area = PI * Math.pow(radio, 2);
 		// Show area of the circunference
 		System.out.println("The area of the circunference is " + area);
 
