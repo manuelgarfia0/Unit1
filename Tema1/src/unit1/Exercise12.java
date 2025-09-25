@@ -8,6 +8,8 @@ public class Exercise12 {
 		// Create scanner
 		Scanner scanner = new Scanner(System.in);
 		// Declare variables
+		final double priceKApple = 2.35;
+		final double priceKPears = 1.95;
 		double appleK;
 		double pearK;
 		double applePrice;
@@ -18,8 +20,8 @@ public class Exercise12 {
 		System.out.println("How many kilos of pears have you sell?");
 		pearK = scanner.nextDouble();
 		// Calculate the prices
-		applePrice = appleK * 2.35;
-		pearPrice = pearK * 1.95;
+		applePrice = appleK * priceKApple;
+		pearPrice = pearK * priceKPears;
 		// Show data
 		System.out.println("You gain " + applePrice + "€ in apples and " + pearPrice + "€ in pears");
 		// Close scanner
