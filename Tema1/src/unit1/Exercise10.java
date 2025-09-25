@@ -14,13 +14,9 @@ public class Exercise10 {
 		System.out.println("Introduce a number: ");
 		number = scanner.nextInt();
 		// Check if number is even
-		if (number % 2 == 0) {
-			even = true;
-			System.out.println("Your number is even");
-		} else {
-			even = false;
-			System.out.println("Your number is odd");
-		}
+		even = number % 2 == 0;
+		// Show true if its even or false if its odd
+		System.out.println(even);
 		// Close scanner
 		scanner.close();
 	}
