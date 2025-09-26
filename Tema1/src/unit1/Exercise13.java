@@ -15,10 +15,8 @@ public class Exercise13 {
 		// Ask data to the user
 		System.out.print("¿Is it raining? (true/false): ");
 		rain = scanner.nextBoolean();
-
 		System.out.print("¿Do you finish your tasks? (true/false): ");
 		finishedTasks = scanner.nextBoolean();
-
 		System.out.print("¿Do you need to go to the library? (true/false): ");
 		goLibrary = scanner.nextBoolean();
 		// Can go out if: (don't rain and finish your tasks) or go to the library
