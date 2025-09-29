@@ -16,7 +16,7 @@ public class Exercise02 {
 		num = sc.nextInt();
 		// Calculate numbers left to be multiple of 7
 		remainder = num % 7;
-		toSeven = 7 - remainder;
+		toSeven = remainder != 0 ? 7 - remainder : 0;
 		// Show data
 		System.out.println(num + " + " + toSeven + " = " + (num + toSeven) + " is multiple of 7");
 
