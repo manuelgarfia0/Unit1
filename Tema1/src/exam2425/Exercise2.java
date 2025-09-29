@@ -7,10 +7,14 @@ public class Exercise2 {
 	public static void main(String[] args) {
 		// Create scanner
 		Scanner scanner = new Scanner(System.in);
+		// Initialize constants
+		final double LESS_THOUSAND = 0.1;
+		final double OVER_THOUSAND = 0.15;
 		// Declare variables
 		int hours;
 		double pricePerHour;
-		double totalPrice;
+		double grossSalary;
+		double netSalary;
 		double discount;
 
 		// Ask data to user
@@ -19,12 +23,13 @@ public class Exercise2 {
 		System.out.println("Introduce how many money do you win per hour: ");
 		pricePerHour = scanner.nextDouble();
 		// Calculate total price
-		totalPrice = hours * pricePerHour;
+		grossSalary = hours * pricePerHour;
 		// Calculate discount
-		discount = totalPrice < 1000 ? 1.1 : 1.5;
-		totalPrice *= discount;
+		discount = grossSalary < 1000 ? LESS_THOUSAND : OVER_THOUSAND;
+		// Calculate net salary
+		netSalary = grossSalary - grossSalary * discount;
 		// Show data
-		System.out.println(totalPrice);
+		System.out.println(netSalary);
 		// Close scanner
 		scanner.close();
 	}
