@@ -22,6 +22,8 @@ public class Exercise03 {
 		toBeMultiple = num2 - remainder;
 		// Show data
 		System.out.println(num + " + " + toBeMultiple + " = " + (num + toBeMultiple) + " is multiple of " + num2);
+		// Close scanner
+		sc.close();
 
 	}
 

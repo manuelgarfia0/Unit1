@@ -19,6 +19,8 @@ public class Exercise02 {
 		toSeven = remainder != 0 ? 7 - remainder : 0;
 		// Show data
 		System.out.println(num + " + " + toSeven + " = " + (num + toSeven) + " is multiple of 7");
+		// Close scanner
+		sc.close();
 
 	}
 
