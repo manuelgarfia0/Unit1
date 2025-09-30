@@ -10,12 +10,13 @@ public class Exercise08 {
 		// Declare variables
 		double meters;
 		int centimeters;
-		int mToC;
+		double mToC;
 		// Ask data to user
 		System.out.println("Introduce the lenght: ");
 		meters = sc.nextDouble();
 		// Calculate distance in centimeters
 		mToC = (meters * 100);
+		centimeters = (int) mToC;
 		// Show result
 		System.out.println(centimeters);
 		// Close scanner
