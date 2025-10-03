@@ -17,7 +17,8 @@ public class Exercise10 {
 		century = (year - 1) / 100 + 1;
 		// Show the century
 		System.out.println(century);
-
+		// Close scanner
+		sc.close();
 	}
 
 }

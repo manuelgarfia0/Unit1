@@ -8,12 +8,15 @@ public class Exercise09 {
 		// Create scanner
 		Scanner sc = new Scanner(System.in);
 		// Declare variables
-		double identifier;
-		int finalIdentifier;
+		int problem;
 		int volume;
 		// Ask data to user
 		System.out.println("Introduce a problem: ");
-		
+		problem = sc.nextInt();
+		// Calculate the volume of the problem
+		volume = (int) problem / 100;
+		// Show the volume of the problem
+		System.out.println("Your problem is in " + volume + " volume.");
 	}
 
 }
